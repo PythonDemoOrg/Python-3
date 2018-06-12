@@ -18,7 +18,7 @@ def main():
     startTime = time.time()
     allPatterns = {}
 
-    with open('Dictionary.txt') as fo:
+    with open('dictionary.txt') as fo:
         wordList = fo.read().split('\n')
 
     for word in wordList:

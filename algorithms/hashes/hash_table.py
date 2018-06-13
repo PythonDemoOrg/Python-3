@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 
-# Filename : downloader.py
+# Filename : hash_table.py
 # author by : WeiQi
 
 class HashTable:

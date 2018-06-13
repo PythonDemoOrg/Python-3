@@ -9,7 +9,7 @@ class HashTable:
         self.count = size  # 最大表长
 
     def hash(self, key):
-        return key % self.count  # 散列函数采用除留余数法
+        return key % self.count  # 散列函数采用简单的取模运算
 
     def insert_hash(self, key):
         print key
@@ -34,7 +34,7 @@ class HashTable:
 if __name__ == '__main__':
 
     list_a = [0, 12, 67, 56, 16, 25, 37, 22, 29, 15, 47, 48, 34]
-    hash_table = HashTable(len(list_a)+100)
+    hash_table = HashTable(len(list_a))
 
     for i in list_a:
         hash_table.insert_hash(i)

@@ -70,6 +70,10 @@
 2、比如在应对文件的微小修改时，散列算法得到的指纹结果应当有显著的不同，    
 2、而algorithms/hashes/md5_collision.py说明了MD5并不能实现这一点，      
 
+### SHA1碰撞
+1、[如何评价2月23日谷歌宣布实现了SHA-1碰撞](https://www.zhihu.com/question/56234281/answer/148349930)     
+2、对于一些大的商业机构来说，MD5和SHA1已经不够安全，推荐至少使用SHA2-256算法
+
 ## 参考文献  
 1、[Hash算法总结](https://blog.csdn.net/asdzheng/article/details/70226007)       
 2、

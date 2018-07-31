@@ -1,6 +1,6 @@
 """
 File: timing1.py
-Prints the running times for probolem sizes that double,
+Prints the running times for problem sizes that double,
 using a single loop.
 """
 import time

@@ -86,7 +86,7 @@ def level_order(node):
 
 
 if __name__ == '__main__':
-    print("\n********* Binary Tree Traversals ************\n")
+    print("\n********* BinaryTree Traversals ************\n")
 
     node = build_tree()
     print("\n********* Pre Order Traversal ************")

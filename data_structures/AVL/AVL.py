@@ -60,7 +60,7 @@ class AVL:
             self.root.height = 0
             self.size = 1
         else:
-            # Same as Binary Tree
+            # Same as BinaryTree
             dad_node = None
             curr_node = self.root
 

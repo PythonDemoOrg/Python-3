@@ -1,7 +1,7 @@
 """
-File: counting.py
-Prints the number of iterations for problem sizes
-that double, using a nested loop.
+File: countfib.py
+Prints the running times for problem sizes that double,
+using a single loop.
 """
 
 problemSize = 1000

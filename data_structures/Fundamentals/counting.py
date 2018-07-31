@@ -3,7 +3,6 @@ File: counting.py
 Prints the running times for problem sizes that double,
 using a single loop.
 """
-import time
 
 problemSize = 1000
 print("%12s%16s" % ("Problem Size", "Iterations"))

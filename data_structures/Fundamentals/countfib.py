@@ -1,21 +1,28 @@
 """
 File: countfib.py
-Prints the running times for problem sizes that double,
-using a single loop.
+Prints the number of calls of a recursive Fibonacci
+function with problem that double.
 """
+from counter import Counter
 
-problemSize = 1000
-print("%12s%16s" % ("Problem Size", "Iterations"))
+def fib(n, counter):
+    """Count the number of calls of the Fibonacci
+    function."""
+    counter.increment()
+    if n < 3:
+        return 1
+    else:
+        return fib(n-1, counter) + fib(n-2, counter)
+
+problemSize = 2
+
+print("%12s%16s" % ("Problem Size", "Calls"))
 for count in range(5):
-    number = 0
+    counter = Counter()
+
     # The start of the algorithm
-    work = 1
-    for j in range(problemSize):
-        for x in range(problemSize):
-            number += 1
-            work += 1
-            work -= 1
+    fib(problemSize, counter)
     # The end of the algorithm
 
-    print("%12d%16.3f" % (problemSize, number))
+    print("%12d%16.3f" % (problemSize, counter))
     problemSize *= 2
